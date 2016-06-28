@@ -1,0 +1,11 @@
+// matchingMovies.forEach(function(movie) {
+//   $("ul#movies").append(
+//     "<li>" + movie.title +
+//     "<ul>" +
+//     "<li>" + movie.director + "</li>" +
+//     "<li>" + movie.year + "</li>" +
+//     "<li>" + movie.cast + "</li>" +
+//     "<li>" + movie.time + "</li>" +
+//     "</ul>" +
+//     "</li>")
+// });

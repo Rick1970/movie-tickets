@@ -1,26 +1,35 @@
-// var eve = {
-//   time: ["11:00 a.m", "1:30 p.m.", "04:30 p.m.", "07:15 p.m."],
-//   price: [5, 5, 5, 8],
-//   rating
-// };
+// var inputtedTitle = '';
+// var inpuddedAge = '';
 
-// function Movie(title, age) {
-//   this.movieTitle = title;
-//   this.movieAge = age;
-//
+// function Customer(title, age) {
+//   this.movieTitle = inputtedTitle;
+//   this.movieAge = inputtedAge;
 // }
 
+function Movie(title, director, year, cast, time) {
+  this.title = title;
+  this.director = director;
+  this.year = year;
+  this.cast = cast;
+  this.time = time;
+}
 
-
+var allAboutEve = new Movie("All About Eve","Joseph L. Mankiewicz", 1950, ["Betty Davis", "Anne Baxter"], "07:00");
+var citizeKane = new Movie("Citizen Kane","Orson Welles", 1941, ["Orson Welles", "Joseph Cotton"], "09:00");
+var currentMovies = [];
+var title1 = '';
 
 $(document).ready(function() {
-  $("form#blanks").submit(function(event) {
-  event.preventDefault();
+  currentMovies.push(allAboutEve, citizeKane);
+  console.log(currentMovies);
 
-  var inputtedTitle = $("#movieTitle").val();
-  var inputtedAge = parseInt($("input#age").val());
-  alert(inputtedTitle);
-  alert(inputtedAge);
 
+
+  currentMovies.forEach(function(movie) {
+    $("#test").append("<li>" + movie.title + "</li>");
   });
+
+
+
+  // });
 });
