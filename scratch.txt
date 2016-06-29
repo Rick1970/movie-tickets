@@ -9,3 +9,22 @@
 //     "</ul>" +
 //     "</li>")
 // });
+
+// $(".clickable").click(function() {
+//
+//   alert("testing")
+//   });
+// });
+//   $(".test").on("click", function() {
+//     for (var i = 0; i < currentMovies.length; i++) {
+//       if (i === 0) {
+//
+//       $("#times").append("<li>" + allAboutEve.time + "</li>");
+//     } else if (i === 1){
+//         $("#times").append("<li>" + citizeKane.time + "</li>");
+//     }
+//   }
+// $(".test").on("click", function() {
+//   currentTimes.push();
+//   alert(currentTimes)
+// });
